@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>N Nida Menaz - Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    .navbar {
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Hero with background */
+    .hero {
+      background: url('background1.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: -1;
+    }
+
+    .profile-img {
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 20px;
+      border: 4px solid white;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    .section {
+      padding: 30px 0;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+      transition: 0.3s ease-in-out;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      border-radius: 6px;
+      margin-bottom: 15px;
+      max-height: 180px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    footer {
+      background-color: #212529;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    ul.skills-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 25px;
+    }
+
+    ul.skills-list li {
+      font-weight: 600;
+      font-size: 1rem;
+      color: #333;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    ul.skills-list li i {
+      color: #007bff;
+      font-size: 1.4rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">N Nida Menaz</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="profile.png" alt="Nida Menaz" class="profile-img" />
+    <h1 class="display-5 fw-bold">Computer Science Engineering Student</h1>
+    <p class="text-light">Final Year | Visvesvaraya Technological University</p>
+  </section>
+
+  <!-- About -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title text-center">About Me</h2>
+      <p class="text-center mx-auto" style="max-width: 720px;">
+        I’m passionate about artificial intelligence and web development. With strong fundamentals in
+        programming, I aim to build efficient and innovative tech solutions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="section-title text-center">Skills & Tools</h2>
+      <ul class="skills-list">
+        <li><i class="fab fa-python"></i> Python</li>
+        <li><i class="fab fa-java"></i> Java</li>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fas fa-database"></i> SQL</li>
+        <li><i class="fas fa-code-branch"></i> Flask</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Projects</h2>
+      <div class="row justify-content-center g-4">
+
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5>Diamond Price Prediction & Blood Bank System</h5>
+            <p>
+              Built a dual-system project combining machine learning for predicting diamond prices and a MySQL-powered
+              blood bank management system to track donor information and blood inventory.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5>2D Game using Python</h5>
+            <p>
+              Designed and developed an interactive 2D game using Python with Pygame. Implemented user controls, game
+              mechanics, scoring system, and collision detection for an engaging user experience.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- GitHub Stats -->
+  <section class="section bg-light">
+    <div class="container text-center">
+      <h2 class="section-title">GitHub Statistics</h2>
+      <img src="https://github-readme-stats.vercel.app/api?username=Nidaminaz&show_icons=true&theme=default"
+        class="img-fluid" alt="GitHub Stats" />
+      <br /><br />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nidaminaz&layout=compact&theme=default"
+        class="img-fluid" alt="Top Languages" />
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Contact Me</h2>
+      <ul class="list-unstyled text-center">
+        <li><strong>Email:</strong> <a href="mailto:nidaminaz8@gmail.com">nidaminaz8@gmail.com</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/nida-menaz-49a218279"
+            target="_blank">View Profile</a></li>
+        <li><strong>Location:</strong> KGF, Karnataka</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Nida Menaz. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+</body>
+
+</html>
+<!-- End of index.html -->
